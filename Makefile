@@ -31,14 +31,14 @@
 # Target file name (without extension). 
 # This is the name of the compiled .hex file.
 TARGET = simpleserial-masked-kyber
-VPATH = mkm4/common:mkm4/crypto_kem/kyber768/m4
+VPATH = src/common:src/kyber768-masked
 #Include directory from PQ-lib
 #IDIR := ./pqlib/pqlib/include
 #CPPFLAGS += -I$(IDIR)
 # List C source files here.
 # Header files (.h) are automatically pulled in.
 #KYBERDIR = ./pqlib/pqlib/src/kyber
-EXTRAINCDIRS += mkm4/common mkm4/crypto_kem/kyber768/m4
+EXTRAINCDIRS += includes 
 
 CDEFS += -DCW -DCOMPARE_USE_A2A
 
